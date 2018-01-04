@@ -58,5 +58,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.manager@1.0 \
+    android.hidl.base@1.0
+
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/gts4lwifi/gts4lwifi-vendor.mk)
