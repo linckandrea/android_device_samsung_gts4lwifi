@@ -42,6 +42,9 @@ TARGET_HW_DISK_ENCRYPTION := true
 # Display
 TARGET_SCREEN_DENSITY := 360
 
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=2048 firmware_class.path=/vendor/firmware_mnt/image
