@@ -57,7 +57,6 @@ vidc.enc.dcvs.extra-buff-count=2
 # NFC
 ro.nfc.port=I2C
 
-dalvik.vm.heapsize=36m
 mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
 net.bt.name=Android
