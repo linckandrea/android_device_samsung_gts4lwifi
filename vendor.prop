@@ -93,17 +93,9 @@ ro.vendor.extension_library=libqti-perfd-client.so
 persist.vendor.qcomsysd.enabled=1
 
 # Unorganized
-dalvik.vm.heapgrowthlimit=256m
-dalvik.vm.heapmaxfree=8m
-dalvik.vm.heapminfree=512k
-dalvik.vm.heapsize=512m
-dalvik.vm.heapstartsize=8m
-dalvik.vm.heaptargetutilization=0.75
-dalvik.vm.lockprof.threshold=500
 keyguard.no_require_sim=true
 log.tag.stats_log=I
 persist.backup.ntpServer=0.pool.ntp.org
-persist.sys.dalvik.vm.lib.2=libart.so
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.atfwd.start=false
 persist.vendor.radio.custom_ecc=1
