@@ -1,15 +1,47 @@
 DEVICE_PROVISIONED=1
+
+# Audio
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
+ro.af.client_heap_size_kbyte=7168
+qcom.hw.aac.encoder=true
+
+# Bluetooth
 bt.max.hfpclient.connections=1
-dalvik.vm.heapsize=36m
+ro.bluetooth.a4wp=false
+ro.bluetooth.emb_wp_mode=true
+ro.bluetooth.library_name=libbluetooth.so
+ro.bluetooth.wipower=true
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac
+persist.vendor.btstack.enable.splita2dp=true
+qcom.bluetooth.soc=cherokee
+vendor.bluetooth.soc=cherokee
+
+# Cabl
+ro.qualcomm.cabl=1
+
+# Camera
+persist.camera.privapp.list=org.codeaurora.snapcam
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam
+ro.qq.camera.sensor=3
+vendor.camera.aux.packagelist=org.codeaurora.snapcam
+
+# Display
 debug.gralloc.enable_fb_ubwc=1
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
 debug.sf.latch_unsignaled=1
 dev.pm.dyn_samplingrate=1
+vendor.display.disable_skip_validate=1
+vendor.display.enable_default_color_mode=1
+sdm.perf_hint_window=50
+vendor.display.perf_hint_window=50
+vendor.gralloc.enable_fb_ubwc=1
+persist.hwc.enable_vds=1
+
+# Media
 media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.enable-aac=true
@@ -19,17 +51,21 @@ media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
+vendor.vidc.enc.disable.pq=true
+vidc.enc.dcvs.extra-buff-count=2
+
+# NFC
+ro.nfc.port=I2C
+
+dalvik.vm.heapsize=36m
 mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
 net.bt.name=Android
 persist.backup.ntpServer="0.pool.ntp.org"
-persist.camera.privapp.list=org.codeaurora.snapcam
 persist.data.netmgrd.qos.enable=true
 persist.debug.coresight.config=stm-events
 persist.debug.wfd.enable=1
-persist.demo.hdmirotationlock=false
 persist.fuse_sdcard=true
-persist.hwc.enable_vds=1
 persist.mm.enable.prefetch=true
 persist.rild.nitz_long_ons_0=
 persist.rild.nitz_long_ons_1=
@@ -43,21 +79,11 @@ persist.rild.nitz_short_ons_3=
 persist.sys.wfd.virtual=0
 persist.timed.enable=true
 persist.ts.rtmakeup=false
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac
-persist.vendor.btstack.enable.splita2dp=true
-persist.vendor.camera.privapp.list=org.codeaurora.snapcam
 persist.vendor.cne.feature=1
 persist.vendor.data.mode=concurrent
 persist.vendor.overlay.izat.optin=rro
-qcom.bluetooth.soc=cherokee
-qcom.hw.aac.encoder=true
 ril.subscription.types=NV,RUIM
 rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so
-ro.af.client_heap_size_kbyte=7168
-ro.bluetooth.a4wp=false
-ro.bluetooth.emb_wp_mode=true
-ro.bluetooth.library_name=libbluetooth.so
-ro.bluetooth.wipower=true
 ro.build.2ndbrand=false
 ro.build.PDA=T830XXU5CVG2
 ro.build.changelist=22915538
@@ -92,10 +118,7 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.texture_cache_flushrate=0.4
 ro.hwui.texture_cache_size=72
 ro.kernel.qemu=0
-ro.nfc.port=I2C
 ro.product_ship=true
-ro.qq.camera.sensor=3
-ro.qualcomm.cabl=1
 ro.system.build.version.sehi=2903
 ro.telephony.default_network=22,20
 ro.user_trial=FALSE
@@ -109,15 +132,6 @@ ro.vendor.sensors.sta_detect=true
 ro.vendor.use_data_netmgrd=true
 ro.wifi.channels=
 sdm.debug.disable_skip_validate=1
-sdm.perf_hint_window=50
 telephony.lteOnCdmaDevice=1
 tunnel.audio.encode = true# end of device/samsung/gts4lwifi/system.prop
-vendor.bluetooth.soc=cherokee
-vendor.camera.aux.packagelist=org.codeaurora.snapcam
-vendor.display.disable_skip_validate=1
-vendor.display.enable_default_color_mode=1
-vendor.display.perf_hint_window=50
-vendor.gralloc.enable_fb_ubwc=1
 vendor.mm.enable.qcom_parser=13631487
-vendor.vidc.enc.disable.pq=true
-vidc.enc.dcvs.extra-buff-count=2
