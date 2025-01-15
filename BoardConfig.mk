@@ -76,6 +76,9 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-06-01
 
+# Selinux
+include device/qcom/sepolicy/sepolicy.mk
+
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
