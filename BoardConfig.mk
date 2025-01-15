@@ -63,6 +63,14 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Root
+BOARD_ROOT_EXTRA_FOLDERS := efs omr
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /mnt/vendor/persist:/persist \
+    /vendor/bt_firmware:/bt_firmware \
+    /vendor/firmware_mnt:/firmware \
+    /vendor/dsp:/dsp
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-06-01
 
