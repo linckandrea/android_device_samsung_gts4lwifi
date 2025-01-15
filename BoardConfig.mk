@@ -68,6 +68,7 @@ VENDOR_SECURITY_PATCH := 2022-06-01
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Inherit the proprietary files
 include vendor/samsung/gts4lwifi/BoardConfigVendor.mk
