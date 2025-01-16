@@ -170,6 +170,20 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "ueventd.rc",
+    src: "etc/ueventd.qcom.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "wifi.rc",
+    src: "etc/wifi.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
 // fstab
 prebuilt_etc {
     name: "fstab.qcom",
