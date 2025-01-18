@@ -4,9 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -39,8 +43,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_CHARACTERISTICS := tablet
 
-# API levels
-PRODUCT_SHIPPING_API_LEVEL := 27
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
