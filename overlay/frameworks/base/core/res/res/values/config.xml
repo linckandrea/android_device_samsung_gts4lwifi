@@ -75,10 +75,10 @@
 
     <!-- If true, the doze component is not started until after the screen has been
          turned off and the screen off animation has been performed. -->
-    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
+    <bool name="config_dozeAfterScreenOffByDefault">false</bool>
 
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
-    <bool name="config_dozePulsePickup">true</bool>
+    <bool name="config_dozePulsePickup">false</bool>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
@@ -88,9 +88,8 @@
          Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
          should be empty.  An example would be "softap.*" -->
     <string-array translatable="false" name="config_tether_wifi_regexs">
-        <item>softap0</item>
         <item>wigig0</item>
-        <item>wifi_br0</item>
+        <item>softap0</item>
     </string-array>
 
     <!-- Dhcp range (min, max) to use for tethering purposes -->
@@ -484,6 +483,14 @@
         <item>253</item>
         <item>254</item>
         <item>255</item>
+        <item>268</item>
+        <item>280</item>
+        <item>293</item>
+        <item>305</item>
+        <item>318</item>
+        <item>330</item>
+        <item>342</item>
+        <item>355</item>
     </integer-array>
 
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
@@ -750,11 +757,19 @@
         <item>355</item>
         <item>357</item>
         <item>360</item>
+        <item>378</item>
+        <item>395</item>
+        <item>413</item>
+        <item>430</item>
+        <item>448</item>
+        <item>465</item>
+        <item>483</item>
+        <item>500</item>
     </array>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">1</integer>
+    <integer name="config_screenBrightnessSettingMinimum">0</integer>
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
@@ -804,8 +819,4 @@
 
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
-
-    <!-- For performance and storage reasons, limit the number of fingerprints per user -->
-    <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
-
 </resources>
