@@ -20,9 +20,10 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T830
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
+PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=gts4lwifi \
     PRIVATE_BUILD_DESC="gts4lwifixx-user 10 QP1A.190711.020 T830XXU5CVG2 release-keys"
 
 BUILD_FINGERPRINT := samsung/gts4lwifixx/gts4lwifi:10/QP1A.190711.020/T830XXU5CVG2:user/release-keys
