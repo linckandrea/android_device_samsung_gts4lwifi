@@ -1307,7 +1307,6 @@ vendor/etc/SoundBoosterParam.txt
 vendor/etc/Speaker_cal.acdb
 vendor/etc/audio_policy.conf
 vendor/etc/audio_tuning_mixer_tavil.txt
-vendor/etc/audio_vendor_policy.conf
 vendor/etc/cacert_location.pem
 vendor/etc/floating_feature.xml
 vendor/etc/fstab.qcom
