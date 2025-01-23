@@ -101,7 +101,8 @@ PRODUCT_SOONG_NAMESPACES += \
 ### AUDIO
 PRODUCT_PACKAGES += \
     audio.r_submix.default \
-    audio.usb.default
+    audio.usb.default \
+    libgui_vendor
 
 # Audio effects
 PRODUCT_PACKAGES += \
@@ -180,10 +181,16 @@ PRODUCT_PACKAGES += \
 
 ### HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.allocator@1.0.vendor \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
+    android.hidl.memory@1.0.vendor \
     android.hidl.manager@1.0 \
-    android.hidl.manager-V1.0-java
+    android.hidl.manager-V1.0-java \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
 
 # VR
 PRODUCT_PACKAGES += \
@@ -193,7 +200,12 @@ PRODUCT_PACKAGES += \
 
 ### VNDK
 PRODUCT_PACKAGES += \
-    vndk_package
+    libstdc++.vendor \
+    libgui_vendor \
+    vndk_package \
+    libion \
+    libminijail \
+    libxml2
 
 # THERMAL
 PRODUCT_PACKAGES += \
