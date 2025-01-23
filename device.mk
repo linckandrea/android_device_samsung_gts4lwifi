@@ -51,6 +51,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 # STAGEFRIGHT
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service
+
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
@@ -129,8 +132,11 @@ PRODUCT_PACKAGES += \
     gralloc.msm8998 \
     hwcomposer.msm8998 \
     memtrack.msm8998 \
+    libdisplayconfig \
     libqdMetaData \
     libqdMetaData.system \
+    libsdmcore \
+    libsdmutils
 
 # RENDERSCRIPT
 PRODUCT_PACKAGES += \
@@ -157,15 +163,17 @@ PRODUCT_PACKAGES += \
 
 ### OMX
 PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor \
+    libc2dcolorconvert \
+    libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
     libOmxEvrcEnc \
+    libOmxG711Enc \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libc2dcolorconvert \
-    libmm-omxcore \
     libstagefrighthw
 
 ### HIDL

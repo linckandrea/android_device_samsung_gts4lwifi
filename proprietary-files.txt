@@ -28,11 +28,6 @@ vendor/lib/com.qualcomm.qti.ant@1.0.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
-# Atrace
-vendor/bin/hw/android.hardware.atrace@1.0-service
-vendor/etc/init/android.hardware.atrace@1.0-service.rc
-vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
-
 # Audio
 vendor/bin/hw/android.hardware.audio@2.0-service
 vendor/etc/init/android.hardware.audio@2.0-service.rc
@@ -283,7 +278,6 @@ vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libqomx_core.so
-vendor/lib/libqservice.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libscveBlobDescriptor.so
 vendor/lib/libscveBlobDescriptor_stub.so
@@ -315,7 +309,6 @@ vendor/lib64/libmmcamera2_stats_lib.so
 vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib64/libqservice.so
 vendor/lib64/libscveBlobDescriptor.so
 vendor/lib64/libscveBlobDescriptor_stub.so
 vendor/lib64/libscveCommon.so
@@ -382,19 +375,13 @@ vendor/lib/hw/vulkan.msm8998.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libdiag.so
 vendor/lib/libdrmutils.so
-vendor/lib/libgpu_tonemapper.so
-vendor/lib/libgrallocutils.so
 vendor/lib/libgsl.so
-vendor/lib/libhwc2onfbadapter.so
 vendor/lib/libllvm-glnext.so
-vendor/lib/libqdutils.so
 vendor/lib/libsdedrm.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
 vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libsdmcore.so
 vendor/lib/libsdmextension.so
-vendor/lib/libsdmutils.so
 vendor/lib/libtinyxml2_1.so
 vendor/lib/vendor.display.color@1.0.so
 vendor/lib/vendor.display.color@1.1.so
@@ -422,19 +409,13 @@ vendor/lib64/hw/vulkan.msm8998.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdrmutils.so
-vendor/lib64/libgpu_tonemapper.so
-vendor/lib64/libgrallocutils.so
 vendor/lib64/libgsl.so
-vendor/lib64/libhwc2onfbadapter.so
 vendor/lib64/libllvm-glnext.so
-vendor/lib64/libqdutils.so
 vendor/lib64/libsdedrm.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmextension.so
-vendor/lib64/libsdmutils.so
 vendor/lib64/libtinyxml2_1.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
@@ -662,13 +643,11 @@ vendor/lib/hw/lights.msm8998.so
 vendor/lib64/hw/lights.msm8998.so
 
 # Media
-etc/seccomp_policy/mediacodec.policy
 lib/libQSEEComAPI_system.so
 lib/libhdcp2.so
 lib/libsavscmn.so
 lib/libsecnativefeature.so
 lib/libsfextcp.so
-lib/libstagefright_codecbase.so
 lib/libstagefright_hdcp.so
 lib/libstagefright_httplive_sec.so
 lib/libstagefright_local_cache.so
@@ -676,11 +655,8 @@ lib64/libQSEEComAPI_system.so
 lib64/libsavscmn.so
 lib64/libsecnativefeature.so
 lib64/libsfextcp.so
-lib64/libstagefright_codecbase.so
 lib64/libstagefright_httplive_sec.so
 lib64/libstagefright_local_cache.so
-vendor/bin/hw/android.hardware.media.omx@1.0-service
-vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libCB.so
 vendor/lib/libOmxAacDec.so
@@ -1021,14 +997,12 @@ vendor/bin/argosd
 vendor/bin/athdiag
 vendor/bin/audioflacapp
 vendor/bin/cnss_diag
-vendor/bin/cplay
 vendor/bin/diag_callback_sample
 vendor/bin/diag_dci_sample
 vendor/bin/diag_klog
 vendor/bin/diag_mdlog
 vendor/bin/diag_socket_log
 vendor/bin/diag_uart_log
-vendor/bin/dumpsys
 vendor/bin/e_loop
 vendor/bin/energy-awareness
 vendor/bin/factory.adsp
@@ -1147,11 +1121,9 @@ vendor/etc/audio_policy.conf
 vendor/etc/audio_tuning_mixer_tavil.txt
 vendor/etc/cacert_location.pem
 vendor/etc/floating_feature.xml
-vendor/etc/fstab.qcom
 vendor/etc/graphite_ipc_platform_info.xml
 vendor/etc/hdr_tm_config.xml
 vendor/etc/listen_platform_info.xml
-vendor/etc/mkshrc
 vendor/etc/msm_irqbalance.conf
 vendor/etc/public.libraries.txt
 vendor/etc/public.libraries.txt.backup
@@ -1338,7 +1310,6 @@ vendor/lib/libgnss.so
 vendor/lib/libgnsspps.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
-vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libhdr_tm.so
 vendor/lib/libhfp.so
