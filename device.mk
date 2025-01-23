@@ -189,12 +189,24 @@ PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-service \
     vr.msm8998
 
+### VNDK
+PRODUCT_PACKAGES += \
+    vndk_package
+
 # THERMAL
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.1-impl \
     android.hardware.thermal@1.0-service \
     thermal.msm8998
+
+# Wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
+    hostapd \
+    hostapd_cli \
+    libqsap_sdk \
+    libwifi-hal-qcom
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/gts4lwifi/gts4lwifi-vendor.mk)

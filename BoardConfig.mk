@@ -125,5 +125,33 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
+# VNDK
+BOARD_VNDK_VERSION := current
+
+# Wifi
+BOARD_HAS_QCOM_WLAN := true
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_qcwcn
+BOARD_WLAN_DEVICE := qcwcn
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_qcwcn
+HOSTAPD_VERSION := VER_0_8_X
+# This doesn't work because wifi driver is a background task
+# we would need to wait till the fwpath is ready
+# WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
+# WIFI_DRIVER_MODULE_NAME := "wlan"
+WIFI_DRIVER_FW_PATH_AP  := "ap"
+WIFI_DRIVER_FW_PATH_P2P := "p2p"
+WIFI_DRIVER_FW_PATH_STA := "sta"
+# If built into kernel /sys/kernel/boot_wlan/boot_wlan 
+# with 1 and 0 should be used
+WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wlan"
+WIFI_DRIVER_STATE_ON := ON
+WIFI_DRIVER_STATE_OFF := OFF
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
+WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
+
 # Inherit the proprietary files
 include vendor/samsung/gts4lwifi/BoardConfigVendor.mk

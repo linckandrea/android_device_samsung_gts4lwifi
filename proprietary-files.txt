@@ -705,6 +705,7 @@ vendor/lib64/libvpphvx.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
+#vendor/lib/libgui_vendor.so
 
 # Media (Dolby)
 vendor/etc/dolby/dax-default.xml
@@ -923,20 +924,14 @@ vendor/bin/hw/android.hardware.usb@1.1-service.wahoo
 vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc
 
 # Wi-Fi
-vendor/bin/hw/android.hardware.wifi@1.0-service
-vendor/bin/hw/hostapd
-vendor/bin/hw/wpa_supplicant
 vendor/bin/cnss-daemon
-vendor/bin/hostapd_cli
 vendor/bin/wpa_cli
-vendor/etc/init/android.hardware.wifi@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.fstman@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
 vendor/lib/libmdf.so
 vendor/lib/libpa.so
 vendor/lib/libsecure_storage.so
 vendor/lib/libwifi-hal-ctrl.so
-vendor/lib/libwifi-hal-qcom.so
 vendor/lib/libwifi-hal.so
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib/vendor.samsung.hardware.security.proca@2.0.so
@@ -948,7 +943,6 @@ vendor/lib64/libpa.so
 vendor/lib64/libsecure_storage.so
 vendor/lib64/libucsengine.so
 vendor/lib64/libwifi-hal-ctrl.so
-vendor/lib64/libwifi-hal-qcom.so
 vendor/lib64/libwifi-hal.so
 vendor/lib64/vendor.qti.hardware.fstman@1.0.so
 vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
@@ -1352,7 +1346,6 @@ vendor/lib/libqisl.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
-vendor/lib/libqsap_sdk.so
 vendor/lib/libqseed3.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-utils.so
@@ -1534,7 +1527,6 @@ vendor/lib64/libqdi.so
 vendor/lib64/libqdma.so
 vendor/lib64/libqdp.so
 vendor/lib64/libqisl.so
-vendor/lib64/libqsap_sdk.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-utils.so
