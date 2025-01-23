@@ -48,7 +48,6 @@ vendor/lib/hw/sound_trigger.primary.msm8998.so
 vendor/lib/lib_SamsungRec_06005.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/lib_soundaliveresampler.so
-vendor/lib/libalsautils.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudio_soundtrigger.so
 vendor/lib/libfloatingfeature.so
@@ -64,7 +63,6 @@ vendor/lib64/hw/android.hardware.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.audio@4.0-impl.so
 vendor/lib64/hw/android.hardware.audio@5.0-impl.so
 vendor/lib64/hw/audio.primary.default.so
-vendor/lib64/libalsautils.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libsecaudioinfo.so
 vendor/lib64/libsecnativefeature.so
@@ -74,7 +72,6 @@ vendor/lib64/vendor.samsung.hardware.audio@1.0.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libaudioeffectoffload.so
 vendor/lib/soundfx/libaudiosaplus_sec.so
-vendor/lib/soundfx/libdynproc.so
 vendor/lib/soundfx/libgearvr.so
 vendor/lib/soundfx/libmysound.so
 vendor/lib/soundfx/libmyspace.so
@@ -96,7 +93,6 @@ vendor/lib/libsecaudiocoreutils.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
 vendor/lib64/soundfx/libaudiosaplus_sec.so
-vendor/lib64/soundfx/libdynproc.so
 vendor/lib64/soundfx/libgearvr.so
 vendor/lib64/soundfx/libmysound.so
 vendor/lib64/soundfx/libmyspace.so
@@ -465,7 +461,6 @@ vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libQTapGLES.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/vulkan.msm8998.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libdiag.so
@@ -506,7 +501,6 @@ vendor/lib64/egl/libGLESv2_adreno.so
 vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/egl/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/vulkan.msm8998.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libdiag.so
@@ -572,16 +566,12 @@ vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 # DRM
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib/mediacas/libclearkeycasplugin.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libcpion.so
 vendor/lib/libdrmfs.so
 vendor/lib/libhdcpsrm.so
 vendor/lib/liboemcrypto.so
 vendor/lib/libwvhidl.so
-vendor/lib64/mediacas/libclearkeycasplugin.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libhdcpsrm.so
@@ -774,10 +764,6 @@ vendor/lib64/libskeymaster3device.so
 vendor/lib/hw/lights.msm8998.so
 vendor/lib64/hw/lights.msm8998.so
 
-# Local time
-vendor/lib/hw/local_time.default.so
-vendor/lib64/hw/local_time.default.so
-
 # Media
 etc/seccomp_policy/mediacodec.policy
 lib/libQSEEComAPI_system.so
@@ -814,7 +800,6 @@ vendor/lib/libOmxApeDecSw.so
 vendor/lib/libOmxDsdDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxG711Dec.so
-vendor/lib/libOmxG711Enc.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
@@ -1103,10 +1088,6 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # USB
 vendor/bin/hw/android.hardware.usb@1.1-service.wahoo
 vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc
-
-# Vibrator
-vendor/lib/hw/vibrator.default.so
-vendor/lib64/hw/vibrator.default.so
 
 # Wi-Fi
 vendor/bin/hw/android.hardware.wifi@1.0-service
