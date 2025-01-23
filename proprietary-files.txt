@@ -377,7 +377,6 @@ vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/hw/vulkan.msm8998.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libdiag.so
-vendor/lib/libdrmutils.so
 vendor/lib/libgsl.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libsdedrm.so
@@ -411,7 +410,6 @@ vendor/lib64/egl/libq3dtools_esx.so
 vendor/lib64/hw/vulkan.msm8998.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libdiag.so
-vendor/lib64/libdrmutils.so
 vendor/lib64/libgsl.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libsdedrm.so
@@ -697,7 +695,6 @@ vendor/lib64/libOmxApeDec.so
 vendor/lib64/libOmxApeDecSw.so
 vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxG711Dec.so
-vendor/lib64/libOmxG711Enc.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
