@@ -30,6 +30,16 @@ CLEAN_VENDOR=true
 KANG=
 SECTION=
 
+
+function blob_fixup() {
+    case "${1}" in
+    # Patch blobs for VNDK
+    vendor/lib/hw/camera.msm8998.so)
+        patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
+        ;;
+    esac
+}
+
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
         -n | --no-cleanup )
