@@ -629,10 +629,6 @@ vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# Fingerprint
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-
 # Gatekeeper
 lib64/vendor.trustonic.tee@1.0.so
 vendor/bin/hw/vendor.trustonic.tee@1.0-service
