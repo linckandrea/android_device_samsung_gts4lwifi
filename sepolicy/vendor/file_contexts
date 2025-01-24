@@ -1,6 +1,5 @@
 # Block devices
 /dev/block/platform/soc/1da4000\.ufshc/by-name/bota          u:object_r:botablk_device:s0
-/dev/block/platform/soc/1da4000\.ufshc/by-name/config        u:object_r:frp_block_device:s0
 /dev/block/platform/soc/1da4000\.ufshc/by-name/debug         u:object_r:debug_block_device:s0
 /dev/block/platform/soc/1da4000\.ufshc/by-name/dsp           u:object_r:dsp_block_device:s0
 /dev/block/platform/soc/1da4000\.ufshc/by-name/dtbo          u:object_r:boot_block_device:s0
@@ -11,7 +10,6 @@
 /dev/block/platform/soc/1da4000\.ufshc/by-name/persistent    u:object_r:frp_block_device:s0
 /dev/block/platform/soc/1da4000\.ufshc/by-name/sec_efs       u:object_r:sec_efsblk_device:s0
 /dev/block/platform/soc/1da4000\.ufshc/by-name/steady        u:object_r:steady_block_device:s0
-/dev/block/platform/soc/1da4000\.ufshc/by-name/vbmeta        u:object_r:boot_block_device:s0
 /dev/block/platform/soc/1da4000\.ufshc/by-name/vendor        u:object_r:system_block_device:s0
 
 # Binaries
