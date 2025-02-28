@@ -22,6 +22,13 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # Product characteristics
 PRODUCT_CHARACTERISTICS := tablet
 
+# QTI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.class_main.sh \
