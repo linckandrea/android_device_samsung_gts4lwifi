@@ -89,6 +89,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# OMX
+PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
+    libgui_vendor \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libOmxVidcCommon \
+    libstagefrighthw
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
