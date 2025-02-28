@@ -144,9 +144,7 @@ vendor/etc/usb_audio_policy_configuration.xml
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so
-vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 
 # Bluetooth (A2DP)
@@ -569,7 +567,6 @@ vendor/lib/libgps.utils.so
 vendor/lib/libidl.so
 vendor/lib/libizat_client_api.so
 vendor/lib/libizat_core.so
-vendor/lib/libjson.so
 vendor/lib/liblbs_core.so
 vendor/lib/libloc_api_v02.so
 vendor/lib/libloc_core.so
@@ -603,7 +600,6 @@ vendor/lib64/libgps.utils.so
 vendor/lib64/libidl.so
 vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so
-vendor/lib64/libjson.so
 vendor/lib64/liblbs_core.so
 vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_core.so
@@ -844,11 +840,9 @@ vendor/lib64/hw/android.hardware.power@1.0-impl.so
 vendor/lib64/hw/power.qcom.so
 
 # RenderScript
-vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib/libRSDriver_adreno.so
 vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
-vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
 vendor/lib64/libRSDriver_adreno.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
@@ -1412,7 +1406,6 @@ vendor/lib/libsxqk.so
 vendor/lib/libsynergy_loc_api.so
 vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib/libsystem_health_mon.so
-vendor/lib/libtinyxml.so
 vendor/lib/libtzdrmgenprov.so
 vendor/lib/libucm_tlc_comm.so
 vendor/lib/libucm_tlc_direct_comm.so
@@ -1592,7 +1585,6 @@ vendor/lib64/libsxqk.so
 vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libsysmon_cdsp_skel.so
 vendor/lib64/libsystem_health_mon.so
-vendor/lib64/libtinyxml.so
 vendor/lib64/libtlc_comm_atn.so
 vendor/lib64/libtlc_comm_iccc.so
 vendor/lib64/libtlc_direct_comm_atn.so
