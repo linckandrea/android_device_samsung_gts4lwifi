@@ -78,7 +78,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
-    android.hidl.base@1.0
+    android.hidl.manager@1.0.vendor \
+    android.hidl.base@1.0 \
+    android.hidl.base@1.0.vendor
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
