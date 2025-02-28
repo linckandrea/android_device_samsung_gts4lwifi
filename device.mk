@@ -77,5 +77,12 @@ PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_PACKAGES += \
     vndk_package
 
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/gts4lwifi/gts4lwifi-vendor.mk)
