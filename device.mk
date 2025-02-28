@@ -7,8 +7,22 @@
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 27
+
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
+# Product characteristics
+PRODUCT_CHARACTERISTICS := tablet
+TARGET_SCREEN_WIDTH := 1600
+TARGET_SCREEN_HEIGHT := 2560
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -35,16 +49,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
-
-# Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-# Product characteristics
-PRODUCT_CHARACTERISTICS := tablet
-TARGET_SCREEN_WIDTH := 1600
-TARGET_SCREEN_HEIGHT := 2560
 
 # QTI
 PRODUCT_PACKAGES += \
@@ -84,10 +88,6 @@ PRODUCT_PACKAGES += \
     init.samsung.bsp.rc \
     init.samsung.rc \
     init.target.rc \
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
 
 # OMX
 PRODUCT_PACKAGES += \
