@@ -111,6 +111,14 @@ TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Root
+BOARD_ROOT_EXTRA_FOLDERS := efs omr
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /mnt/vendor/persist:/persist \
+    /vendor/bt_firmware:/bt_firmware \
+    /vendor/firmware_mnt:/firmware \
+    /vendor/dsp:/dsp
+
 # Treble
 BOARD_VNDK_VERSION := current
 
