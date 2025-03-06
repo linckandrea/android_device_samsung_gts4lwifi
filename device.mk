@@ -98,7 +98,7 @@ PRODUCT_PACKAGES += \
 
 # Seccomp
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
+    $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -129,7 +129,7 @@ PRODUCT_PACKAGES += \
     init.qti.fm.sh \
     init.qti.ims.sh \
     init.qti.qseecomd.sh \
-    qca6234-service.sh \
+    qca6234-service.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -140,7 +140,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.samsung.bsp.rc \
     init.samsung.rc \
-    init.target.rc \
+    init.target.rc
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -173,8 +173,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/gts4lwifi/gts4lwifi-vendor.mk)

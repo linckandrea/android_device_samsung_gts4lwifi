@@ -675,7 +675,6 @@ vendor/lib/hw/local_time.default.so
 vendor/lib64/hw/local_time.default.so
 
 # Media
-etc/seccomp_policy/mediacodec.policy
 lib/libQSEEComAPI_system.so
 lib/libhdcp2.so
 lib/libsavscmn.so
@@ -694,7 +693,6 @@ lib64/libstagefright_httplive_sec.so
 lib64/libstagefright_local_cache.so
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/etc/init/android.hardware.media.omx@1.0-service.rc
-vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libCB.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
@@ -1108,10 +1106,8 @@ vendor/etc/SoundBoosterParam.txt
 vendor/etc/Speaker_cal.acdb
 vendor/etc/audio_policy.conf
 vendor/etc/audio_tuning_mixer_tavil.txt
-vendor/etc/audio_vendor_policy.conf
 vendor/etc/cacert_location.pem
 vendor/etc/floating_feature.xml
-vendor/etc/fstab.qcom
 vendor/etc/graphite_ipc_platform_info.xml
 vendor/etc/hdr_tm_config.xml
 vendor/etc/listen_platform_info.xml
